@@ -27,8 +27,9 @@ while True:
     for index, obj in objects.iterrows():
         x1, y1, x2, y2 = obj[['xmin', 'ymin', 'xmax', 'ymax']].values
         cls = int(obj['class'])
-        cv2.rectangle(frame, (x1, y1), (x2, y2), colors[cls], 2)
-        cv2.putText(frame, classes[cls], (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, colors[cls], 2)
+        if cls < len(classes):
+            cv2.rectangle(frame, (x1, y1), (x2, y2), colors[cls], 2)
+            cv2.putText(frame, classes[cls], (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, colors[cls], 2)
 
     # Exibir o quadro com os objetos detectados
     cv2.imshow('Object Detection', frame)
