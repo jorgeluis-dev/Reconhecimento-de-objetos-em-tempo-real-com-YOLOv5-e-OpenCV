@@ -1,0 +1,5 @@
+train: ../data/clock/images
+val: ../data/clock/images
+
+nc: 1
+names: ['watch']

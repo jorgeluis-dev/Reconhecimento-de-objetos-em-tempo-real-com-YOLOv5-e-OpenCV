@@ -15,7 +15,7 @@ test:  # test images (optional)
 
 # Classes
 names:
-  0: Person
+  0: Pessoa
   1: Sneakers
   2: Chair
   3: Other Shoes

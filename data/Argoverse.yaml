@@ -15,7 +15,7 @@ test: Argoverse-1.1/images/test/  # test images (optional) https://eval.ai/web/c
 
 # Classes
 names:
-  0: person
+  0: pessoa
   1: bicycle
   2: car
   3: motorcycle

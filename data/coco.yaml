@@ -15,7 +15,7 @@ test: test-dev2017.txt  # 20288 of 40670 images, submit to https://competitions.
 
 # Classes
 names:
-  0: person
+  0: pessoa
   1: bicycle
   2: car
   3: motorcycle
